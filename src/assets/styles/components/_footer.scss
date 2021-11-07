@@ -1,0 +1,26 @@
+footer {
+  background-color: $Dark-moderate-cyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  font-weight: bold;
+  //   color: darken($color: $Dark-moderate-cyan, $amount: 10%);
+  color: white;
+  p {
+    cursor: pointer;
+  }
+  .list {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  .list-icons {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+.photos {
+  @include xs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &_list {
+      img {
+        width: 100%;
+      }
+      .mobile {
+        display: block;
+      }
+      .desktop {
+        display: none;
+      }
+    }
+  }
+  @include md {
+    grid-template-columns: repeat(4, 1fr);
+    &_list {
+      .mobile {
+        display: none;
+      }
+      .desktop {
+        display: block;
+      }
+    }
+  }
+}
